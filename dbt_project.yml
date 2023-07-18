@@ -39,3 +39,6 @@ models:
     staging:
       +materialized: view
 
+dispatch:
+  - macro_namespace: dbt_utils
+    search_order: ['dbt_cloud', 'dbt_utils']
